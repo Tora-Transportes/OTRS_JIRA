@@ -43,7 +43,7 @@ module.exports = new class GetOtrsRepository {
                          'nivaldo.marcal',
                          'romulo.dpereira'
                          )
-      AND MIME.create_by = 1 AND MIME.change_by = 1
+      AND MIME.create_by IN('1','3','4','7','11','14','15','17','22','50','54','73')
       AND TIC.create_time  >= CURDATE()
       ORDER BY TIC.ID DESC;`) );
     } catch (err) {
