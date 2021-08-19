@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'JIRA_INTEGRATION',
+      name: 'SERVICE_JIRA_INTEGRATION',
       script: './src/index.js',
       autorestart: true,
       watch: false,

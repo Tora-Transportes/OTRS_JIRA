@@ -15,8 +15,10 @@ module.exports = new class GetOtrsRepository {
           WHEN TIC.customer_id = 'giuliana.costa' THEN "60ec5a7bcc1f700071f4632e"
           WHEN TIC.customer_id = 'jeferson.silva' THEN "5dc471e3dfcafc0de6cce4cd"
           WHEN TIC.customer_id = 'jonathan.gomes' THEN "5d36fc07d7be220c1ab5239b"
+          WHEN TIC.customer_id = 'jhony.santos' THEN "606b1cffedc14f0076796b7c"
           WHEN TIC.customer_id = 'marcio.formagini' THEN "5d51501803ef800dad5db672"
           WHEN TIC.customer_id = 'max.gomes' THEN "5f7c5bb7021acf0076e4f981"
+          WHEN TIC.customer_id = 'nivaldo.marcal' THEN "611e53c346c6b500719998a9"
           WHEN TIC.customer_id = 'romulo.dpereira' THEN "5f7c9e22c59441007754491a"
           ELSE "5f7c9e22c59441007754491a" END AS accountId,
             TIC.customer_id AS nome_colaborador,
@@ -35,8 +37,10 @@ module.exports = new class GetOtrsRepository {
                          'giuliana.costa'
                          'jeferson.silva',
                          'jonathan.gomes',
+                         'jhony.santos',
                          'marcio.formagini',
                          'max.gomes',
+                         'nivaldo.marcal',
                          'romulo.dpereira'
                          )
       AND MIME.create_by = 1 AND MIME.change_by = 1
