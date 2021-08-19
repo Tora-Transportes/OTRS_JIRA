@@ -7,7 +7,7 @@ module.exports = new class GetOtrsRepository {
       const connection = await db();
 
       return connection.select(connection.raw(` 
-      DISTINCT
+       DISTINCT
       CASE
           WHEN TIC.customer_id = 'andre.silva' THEN "5d36fc07d7be220c1ab5239b"
           WHEN TIC.customer_id = 'alexandre.teofilo' THEN "5d36fc07d7be220c1ab5239b"
@@ -39,8 +39,9 @@ module.exports = new class GetOtrsRepository {
                          'max.gomes',
                          'romulo.dpereira'
                          )
+      AND MIME.create_by = 1 AND MIME.change_by = 1
       AND TIC.create_time  >= CURDATE()
-      ORDER BY TIC.ID DESC`) );
+      ORDER BY TIC.ID DESC;`) );
     } catch (err) {
       logger.error(`GetOtrsRepository ${err.message}`);
     }
