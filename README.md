@@ -2,7 +2,6 @@
 
 [![PRETTIER](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://gitter.im/jlongster/prettie)
 
-
 <!-- PROJECT -->
 <br />
 <p align="center">
